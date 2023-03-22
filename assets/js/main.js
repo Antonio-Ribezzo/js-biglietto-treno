@@ -19,20 +19,19 @@ function myFunction(){
 
     let fullPrice = kmTravel * 0.21;
 
-
     console.log(kmTravel, Minors, Adult, Over, fullPrice);
 
     if(Minors == true){
-        let rightPrice = fullPrice - (fullPrice * 0.20);
-        let realPrice = rightPrice.toFixed(2);
-        console.log(rightPrice, realPrice);
+        let realPrice = (fullPrice - (fullPrice * 0.20)).toFixed(2);
+        console.log(realPrice);
+        document.getElementById('price').innerHTML = `<span>${realPrice}</span>`
     } else if (Over == true){
-        let rightPrice = fullPrice - (fullPrice * 0.40);
-        let realPrice = rightPrice.toFixed(2);
-        console.log(rightPrice, realPrice);
+        let realPrice = (fullPrice - (fullPrice * 0.40)).toFixed(2);
+        console.log(realPrice);
+        document.getElementById('price').innerHTML = `<span>${realPrice}</span>`
     } else{
-        let rightPrice = fullPrice;
-        let realPrice = rightPrice.toFixed(2);
-        console.log(rightPrice, realPrice);
+        let realPrice = (fullPrice).toFixed(2);
+        console.log(realPrice);
+        document.getElementById('price').innerHTML = `<span>${realPrice}</span>`
     }
 }
