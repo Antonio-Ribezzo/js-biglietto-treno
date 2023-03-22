@@ -7,3 +7,32 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio,
     • va applicato uno sconto del 40% per gli over 65
 L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 */
+
+
+
+function myFunction(){
+    let kmTravel = document.getElementById('kilometres').value;
+
+    let Minors = document.getElementById('minors').checked;
+    let Adult = document.getElementById('adult').checked;
+    let Over = document.getElementById('over65').checked;
+
+    let fullPrice = kmTravel * 0.21;
+
+
+    console.log(kmTravel, Minors, Adult, Over, fullPrice);
+
+    if(Minors == true){
+        let rightPrice = fullPrice - (fullPrice * 0.20);
+        let realPrice = rightPrice.toFixed(2);
+        console.log(rightPrice, realPrice);
+    } else if (Over == true){
+        let rightPrice = fullPrice - (fullPrice * 0.40);
+        let realPrice = rightPrice.toFixed(2);
+        console.log(rightPrice, realPrice);
+    } else{
+        let rightPrice = fullPrice;
+        let realPrice = rightPrice.toFixed(2);
+        console.log(rightPrice, realPrice);
+    }
+}
