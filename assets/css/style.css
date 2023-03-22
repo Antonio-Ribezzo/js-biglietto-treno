@@ -1,0 +1,22 @@
+#container-0{
+    background-color: antiquewhite;
+}
+
+.card{
+    width: 30rem !important;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.312);
+}
+
+#main-text,
+.card-body{
+    font-family: 'Comic Neue', cursive;
+}
+
+.card-body{
+    border-radius: 5rem !important;
+}
+
+.list-group-item{
+    background-color: rgba(0, 0, 0, 0.4);
+}
