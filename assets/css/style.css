@@ -1,20 +1,21 @@
+*{
+    font-family: 'Comic Neue', cursive;
+}
+
 #container-0{
     background-color: antiquewhite;
 }
 
-.card{
-    width: 30rem !important;
-    border-radius: 2rem;
+#card{
     background-color: rgba(0, 0, 0, 0.312);
 }
 
-#main-text,
-.card-body{
-    font-family: 'Comic Neue', cursive;
+#main-text h1{
+    font-size: 3rem;
 }
 
-.card-body{
-    border-radius: 5rem !important;
+#main-text p{
+    font-size: 1.5rem;
 }
 
 .list-group-item{

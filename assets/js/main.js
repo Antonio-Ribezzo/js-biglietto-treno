@@ -16,17 +16,17 @@ function myFunction(){
     let Minors = document.getElementById('minors').checked;
     let Adult = document.getElementById('adult').checked;
     let Over = document.getElementById('over65').checked;
-
-    let fullPrice = kmTravel * 0.21;
+    const kmPrice = 0.21;
+    let fullPrice = kmTravel * kmPrice;
 
     console.log(kmTravel, Minors, Adult, Over, fullPrice);
 
     if(Minors == true){
-        let realPrice = (fullPrice - (fullPrice * 0.20)).toFixed(2);
+        let realPrice = (fullPrice * 0.80).toFixed(2);
         console.log(realPrice);
         document.getElementById('price').innerHTML = `<span>${realPrice}</span>`
     } else if (Over == true){
-        let realPrice = (fullPrice - (fullPrice * 0.40)).toFixed(2);
+        let realPrice = (fullPrice * 0.60).toFixed(2);
         console.log(realPrice);
         document.getElementById('price').innerHTML = `<span>${realPrice}</span>`
     } else{
